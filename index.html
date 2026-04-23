@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="لمسه شفاء  - خدمات التمريض المنزلي في الفيوم | Home nursing care services in Fayoum, Egypt">
+  <title> لمسه شفاء | Lamsat Shefaa - تمريض منزلي متكامل في الفيوم</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&family=Tajawal:wght@300;400;500;700;900&family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a class="logo" onclick="showPage('home')">
+          <div class="logo-icon">🏥</div>
+          <div class="logo-text">
+            <span class="logo-ar"> لمسه شفاء</span>
+            <span class="logo-en">Lamsat Shefaa</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a onclick="showPage('home')" class="active-link" id="nav-home">
+              <span class="ar-text">الرئيسية</span><span class="en-text">Home</span>
+            </a></li>
+          <li><a onclick="showPage('about')" id="nav-about">
+              <span class="ar-text">من نحن</span><span class="en-text">About</span>
+            </a></li>
+          <li><a onclick="showPage('services')" id="nav-services">
+              <span class="ar-text">خدماتنا</span><span class="en-text">Services</span>
+            </a></li>
+          <li><a onclick="showPage('team')" id="nav-team">
+              <span class="ar-text">فريقنا</span><span class="en-text">Team</span>
+            </a></li>
+          <li><a onclick="showPage('reviews')" id="nav-reviews">
+              <span class="ar-text">آراء العملاء</span><span class="en-text">Reviews</span>
+            </a></li>
+          <li><a onclick="showPage('contact')" id="nav-contact">
+              <span class="ar-text">تواصل معنا</span><span class="en-text">Contact</span>
+            </a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="lang-btn" onclick="toggleLang()">
+            <span>🌐</span>
+            <span class="ar-text">English</span>
+            <span class="en-text">عربي</span>
+          </button>
+          <a class="btn btn-primary book-btn-nav" onclick="showPage('book')" style="cursor:pointer">
+            <span class="ar-text">📅 احجز الآن</span>
+            <span class="en-text">📅 Book Now</span>
+          </a>
+        </div>
+        <button class="hamburger" onclick="toggleMobile()" aria-label="menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="mobile-nav" id="mobile-nav">
+        <a onclick="showPage('home');closeMobile()"><span class="ar-text">🏠 الرئيسية</span><span class="en-text">🏠
+            Home</span></a>
+        <a onclick="showPage('about');closeMobile()"><span class="ar-text">ℹ️ من نحن</span><span class="en-text">ℹ️
+            About</span></a>
+        <a onclick="showPage('services');closeMobile()"><span class="ar-text">💉 خدماتنا</span><span class="en-text">💉
+            Services</span></a>
+        <a onclick="showPage('team');closeMobile()"><span class="ar-text">👩‍⚕️ فريقنا</span><span class="en-text">👩‍⚕️
+            Team</span></a>
+        <a onclick="showPage('reviews');closeMobile()"><span class="ar-text">⭐ آراء العملاء</span><span
+            class="en-text">⭐ Reviews</span></a>
+        <a onclick="showPage('contact');closeMobile()"><span class="ar-text">📞 تواصل معنا</span><span
+            class="en-text">📞 Contact</span></a>
+        <a onclick="showPage('book');closeMobile()"
+          style="background:var(--blue-pale);color:var(--blue-bright);font-weight:700;"><span class="ar-text">📅 احجز
+            الآن</span><span class="en-text">📅 Book Now</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======== HOME PAGE ======== -->
+  <div class="page active" id="page-home">
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-bg-pattern"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span>📍</span>
+            <span class="ar-text">نخدم جميع مناطق الفيوم</span>
+            <span class="en-text">Serving all Fayoum areas</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="ar-text">رعاية صحية متكاملة<br><span>حتى باب بيتك</span></span>
+            <span class="en-text">Complete Home<br><span>Healthcare Services</span></span>
+          </h1>
+          <p class="hero-subtitle">
+            <span class="ar-text">فريق تمريض محترف يصل إليك في منزلك بالفيوم — خدمة 24 ساعة طوال أيام الأسبوع بأعلى
+              معايير الجودة والأمان</span>
+            <span class="en-text">A professional nursing team that comes to your home in Fayoum — 24/7 service with the
+              highest quality and safety standards</span>
+          </p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" onclick="showPage('book')" style="cursor:pointer">
+              <span>📅</span>
+              <span class="ar-text">احجز الآن</span>
+              <span class="en-text">Book Now</span>
+            </a>
+            <a href="https://wa.me/201092861789" target="_blank" class="btn btn-whatsapp">
+              <span>💬</span>
+              <span class="ar-text">تواصل واتساب</span>
+              <span class="en-text">WhatsApp Us</span>
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="hero-stat-num">500+</span>
+              <span class="hero-stat-label"><span class="ar-text">مريض راضٍ</span><span class="en-text">Happy
+                  Patients</span></span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-num">24/7</span>
+              <span class="hero-stat-label"><span class="ar-text">خدمة مستمرة</span><span
+                  class="en-text">Availability</span></span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-num">10+</span>
+              <span class="hero-stat-label"><span class="ar-text">خدمة طبية</span><span
+                  class="en-text">Services</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-badge badge-1">
+            <span class="badge-icon">⭐</span>
+            <div>
+              <div style="font-weight:800;font-size:0.9rem">5.0</div>
+              <div style="font-size:0.72rem;color:var(--gray-400)"><span class="ar-text">تقييم ممتاز</span><span
+                  class="en-text">Top Rated</span></div>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-icon">🏥</div>
+            <div class="hero-card-title">
+              <span class="ar-text">خدماتنا الطبية</span>
+              <span class="en-text">Our Medical Services</span>
+            </div>
+            <div>
+              <span class="service-pill"><span class="ar-text">حقن وريدي</span><span class="en-text">IV
+                  Therapy</span></span>
+              <span class="service-pill"><span class="ar-text">جرح وضمادات</span><span class="en-text">Wound
+                  Care</span></span>
+              <span class="service-pill"><span class="ar-text">قياس ضغط</span><span class="en-text">BP
+                  Monitor</span></span>
+              <span class="service-pill"><span class="ar-text">علاج طبيعي</span><span
+                  class="en-text">Physio</span></span>
+              <span class="service-pill"><span class="ar-text">رعاية مسنين</span><span class="en-text">Elder
+                  Care</span></span>
+              <span class="service-pill"><span class="ar-text">قسطرة</span><span class="en-text">Catheter</span></span>
+            </div>
+          </div>
+          <div class="hero-badge badge-2">
+            <span class="badge-icon">✅</span>
+            <div>
+              <div style="font-weight:800;font-size:0.9rem"><span class="ar-text">معتمد</span><span
+                  class="en-text">Certified</span></div>
+              <div style="font-size:0.72rem;color:var(--gray-400)"><span class="ar-text">ممرضون محترفون</span><span
+                  class="en-text">Pro Nurses</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <div id="trust-bar">
+      <div class="container">
+        <div class="trust-inner">
+          <div class="trust-item"><span>✅</span><span class="ar-text">ممرضون معتمدون</span><span
+              class="en-text">Certified Nurses</span></div>
+          <div class="trust-item"><span>🕐</span><span class="ar-text">متاح 24/7</span><span class="en-text">Available
+              24/7</span></div>
+          <div class="trust-item"><span>🏠</span><span class="ar-text">نصل لبيتك</span><span class="en-text">Home
+              Visits</span></div>
+          <div class="trust-item"><span>🔒</span><span class="ar-text">خدمة آمنة وموثوقة</span><span
+              class="en-text">Safe & Trusted</span></div>
+          <div class="trust-item"><span>📍</span><span class="ar-text">كل مناطق الفيوم</span><span class="en-text">All
+              Fayoum Areas</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURED SERVICES -->
+    <section class="section-pad" id="services">
+      <div class="container">
+        <div class="reveal">
+          <span class="tag"><span class="ar-text">خدماتنا المتميزة</span><span class="en-text">Our
+              Services</span></span>
+          <h2 class="section-title"><span class="ar-text">كل ما تحتاجه في منزلك</span><span class="en-text">Everything
+              You Need at Home</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle"><span class="ar-text">نقدم مجموعة شاملة من خدمات التمريض المنزلي بأعلى المعايير
+              الطبية</span><span class="en-text">We provide a comprehensive range of home nursing services to the
+              highest medical standards</span></p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal reveal-delay-1">
+            <div class="service-icon-wrap">💉</div>
+            <div class="service-name"><span class="ar-text">جميع أنواع الحقن</span><span class="en-text">All Types of
+                Injections</span></div>
+            <div class="service-desc"><span class="ar-text">حقن عضلي، وريدي، وتحت الجلد بأيدي متخصصين</span><span
+                class="en-text">IM, IV, and subcutaneous injections administered by specialists</span></div>
+          </div>
+          <div class="service-card reveal reveal-delay-2">
+            <div class="service-icon-wrap">🩺</div>
+            <div class="service-name"><span class="ar-text">محاليل وريدية</span><span class="en-text">IV Fluid
+                Administration</span></div>
+            <div class="service-desc"><span class="ar-text">إعطاء المحاليل الوريدية بأمان وراحة تامة في
+                منزلك</span><span class="en-text">Safe and comfortable IV fluid therapy at your home</span></div>
+          </div>
+          <div class="service-card reveal reveal-delay-3">
+            <div class="service-icon-wrap">📊</div>
+            <div class="service-name"><span class="ar-text">متابعة المريض</span><span class="en-text">Patient
+                Monitoring</span></div>
+            <div class="service-desc"><span class="ar-text">قياس ضغط الدم ومتابعة السكر ومؤشرات الصحة
+                الحيوية</span><span class="en-text">Blood pressure, diabetes monitoring and vital signs tracking</span>
+            </div>
+          </div>
+          <div class="service-card reveal reveal-delay-1">
+            <div class="service-icon-wrap">🩹</div>
+            <div class="service-name"><span class="ar-text">تغيير الضمادات</span><span class="en-text">Wound Care &
+                Dressing</span></div>
+            <div class="service-desc"><span class="ar-text">رعاية الجروح وتغيير الضمادات بطرق طبية معقمة</span><span
+                class="en-text">Professional sterile wound care and dressing changes</span></div>
+          </div>
+          <div class="service-card reveal reveal-delay-2">
+            <div class="service-icon-wrap">🦶</div>
+            <div class="service-name"><span class="ar-text">علاج قدم السكري</span><span class="en-text">Diabetic Foot
+                Care</span></div>
+            <div class="service-desc"><span class="ar-text">رعاية متخصصة لمرضى السكري وعلاج مضاعفات القدم</span><span
+                class="en-text">Specialized care for diabetic patients and foot complications</span></div>
+          </div>
+          <div class="service-card reveal reveal-delay-3">
+            <div class="service-icon-wrap">👴</div>
+            <div class="service-name"><span class="ar-text">رعاية المسنين</span><span class="en-text">Elderly Home
+                Care</span></div>
+            <div class="service-desc"><span class="ar-text">خدمة رعاية شاملة ومتواصلة لكبار السن في منازلهم</span><span
+                class="en-text">Comprehensive continuous care for the elderly at home</span></div>
+          </div>
+          <div class="service-card reveal reveal-delay-1">
+            <div class="service-icon-wrap">🔧</div>
+            <div class="service-name"><span class="ar-text">تركيب قسطرة بولية</span><span class="en-text">Urinary
+                Catheter</span></div>
+            <div class="service-desc"><span class="ar-text">تركيب القسطرة البولية بكل احترافية ومعايير
+                النظافة</span><span class="en-text">Professional urinary catheter insertion with hygiene
+                standards</span></div>
+          </div>
+          <div class="service-card reveal reveal-delay-2">
+            <div class="service-icon-wrap">🍽️</div>
+            <div class="service-name"><span class="ar-text">أنبوب رايل</span><span class="en-text">Nasogastric (Ryle)
+                Tube</span></div>
+            <div class="service-desc"><span class="ar-text">تركيب أنبوب التغذية عبر الأنف باحترافية عالية</span><span
+                class="en-text">Professional nasogastric feeding tube insertion</span></div>
+          </div>
+          <div class="service-card reveal reveal-delay-3">
+            <div class="service-icon-wrap">🩸</div>
+            <div class="service-name"><span class="ar-text">تسليك حديد وريدي</span><span class="en-text">Iron IV
+                Infusion</span></div>
+            <div class="service-desc"><span class="ar-text">إعطاء الحديد عبر الوريد لعلاج فقر الدم في منزلك</span><span
+                class="en-text">IV iron infusion therapy for anemia treatment at home</span></div>
+          </div>
+          <div class="service-card reveal reveal-delay-1">
+            <div class="service-icon-wrap">🧠</div>
+            <div class="service-name"><span class="ar-text">علاج طبيعي للجلطات</span><span class="en-text">Stroke
+                Physiotherapy</span></div>
+            <div class="service-desc"><span class="ar-text">جلسات العلاج الطبيعي لمرضى الجلطة الدماغية في
+                المنزل</span><span class="en-text">Physiotherapy sessions for stroke patients at home</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="section-pad" id="why-us">
+      <div class="container">
+        <div class="reveal">
+          <span class="tag"><span class="ar-text">لماذا نحن؟</span><span class="en-text">Why Choose Us?</span></span>
+          <h2 class="section-title"><span class="ar-text">ثقتك هي أساس عملنا</span><span class="en-text">Your Trust is
+              Our Foundation</span></h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="why-grid">
+          <div class="why-visual reveal">
+            <h3 style="color:var(--blue-deep);font-size:1.2rem;font-weight:700;margin-bottom:8px">
+              <span class="ar-text">أرقام تتحدث عنا</span><span class="en-text">Numbers Speak for Us</span>
+            </h3>
+            <p style="color:var(--gray-600);font-size:0.88rem">
+              <span class="ar-text">خبرة واسعة في خدمة مرضى الفيوم</span><span class="en-text">Extensive experience
+                serving Fayoum patients</span>
+            </p>
+            <div class="why-nums">
+              <div class="why-num-card">
+                <div class="why-num">500+</div>
+                <div class="why-num-label"><span class="ar-text">مريض راضٍ</span><span class="en-text">Happy
+                    Patients</span></div>
+              </div>
+              <div class="why-num-card">
+                <div class="why-num">24/7</div>
+                <div class="why-num-label"><span class="ar-text">خدمة متواصلة</span><span class="en-text">Always
+                    Available</span></div>
+              </div>
+              <div class="why-num-card">
+                <div class="why-num">10+</div>
+                <div class="why-num-label"><span class="ar-text">خدمة طبية</span><span class="en-text">Medical
+                    Services</span></div>
+              </div>
+              <div class="why-num-card">
+                <div class="why-num">5★</div>
+                <div class="why-num-label"><span class="ar-text">تقييم العملاء</span><span class="en-text">Customer
+                    Rating</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="why-features reveal reveal-delay-2">
+            <div class="why-feature">
+              <div class="why-feature-icon">👩‍⚕️</div>
+              <div>
+                <div class="why-feature-title"><span class="ar-text">ممرضون محترفون ومعتمدون</span><span
+                    class="en-text">Certified Professional Nurses</span></div>
+                <div class="why-feature-desc"><span class="ar-text">فريقنا مؤهل ومدرب على أعلى مستوى طبي</span><span
+                    class="en-text">Our team is qualified and trained to the highest medical standards</span></div>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="why-feature-icon">🕐</div>
+              <div>
+                <div class="why-feature-title"><span class="ar-text">خدمة على مدار الساعة</span><span
+                    class="en-text">Round-the-Clock Service</span></div>
+                <div class="why-feature-desc"><span class="ar-text">نحن هنا في أي وقت تحتاجنا — ليل أو نهار</span><span
+                    class="en-text">We're here whenever you need us — day or night</span></div>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="why-feature-icon">🏠</div>
+              <div>
+                <div class="why-feature-title"><span class="ar-text">نصل إليك في منزلك</span><span class="en-text">We
+                    Come to Your Home</span></div>
+                <div class="why-feature-desc"><span class="ar-text">تغطية شاملة لجميع مناطق محافظة الفيوم</span><span
+                    class="en-text">Full coverage across all Fayoum governorate areas</span></div>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="why-feature-icon">💊</div>
+              <div>
+                <div class="why-feature-title"><span class="ar-text">أدوات طبية معقمة</span><span
+                    class="en-text">Sterile Medical Equipment</span></div>
+                <div class="why-feature-desc"><span class="ar-text">نستخدم أدوات طبية معقمة ذات استخدام واحد
+                    فقط</span><span class="en-text">We use single-use, fully sterile medical equipment</span></div>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="why-feature-icon">💙</div>
+              <div>
+                <div class="why-feature-title"><span class="ar-text">رعاية بالقلب والمهنية</span><span
+                    class="en-text">Care with Heart & Professionalism</span></div>
+                <div class="why-feature-desc"><span class="ar-text">نتعامل مع كل مريض بمحبة واحترام كامل</span><span
+                    class="en-text">We treat every patient with love and complete respect</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK CTA -->
+    <section id="quick-contact">
+      <div class="container" style="position:relative;z-index:2;text-align:center;">
+        <h2 class="cta-title reveal"><span class="ar-text">تحتاج مساعدة طبية الآن؟</span><span class="en-text">Need
+            Medical Help Now?</span></h2>
+        <p class="cta-sub reveal"><span class="ar-text">تواصل معنا فوراً — نصلك في أسرع وقت</span><span
+            class="en-text">Contact us immediately — we'll reach you as fast as possible</span></p>
+        <div class="cta-buttons reveal">
+          <a class="btn btn-primary" onclick="showPage('book')" style="cursor:pointer">
+            <span>📅</span><span class="ar-text">احجز خدمة</span><span class="en-text">Book a Service</span>
+          </a>
+          <a href="https://wa.me/201092861789" target="_blank" class="btn btn-whatsapp">
+            <span>💬</span><span class="ar-text">واتساب</span><span class="en-text">WhatsApp</span>
+          </a>
+          <a href="tel:+201092861789" class="btn btn-outline" style="color:white;border-color:rgba(255,255,255,0.5)">
+            <span>📞</span><span class="ar-text">اتصل بنا</span><span class="en-text">Call Us</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- END HOME PAGE -->
+
+  <!-- ======== ABOUT PAGE ======== -->
+  <div class="page" id="page-about">
+    <div style="height:72px"></div>
+    <section class="section-pad" id="about">
+      <div class="container">
+        <div class="reveal">
+          <span class="tag"><span class="ar-text">من نحن</span><span class="en-text">About Us</span></span>
+          <h2 class="section-title"><span class="ar-text"> لمسه شفاء للتمريض المنزلي</span><span class="en-text">Lamsat
+              Shefaa – Home Nursing</span></h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="about-grid">
+          <div class="about-image-placeholder reveal">
+            <span style="position:relative;z-index:1">🏥</span>
+            <span style="font-size:1.1rem;font-weight:700;position:relative;z-index:1">
+              <span class="ar-text"> لمسه شفاء</span><span class="en-text">Lamsat Shefaa</span>
+            </span>
+            <span style="font-size:0.85rem;opacity:0.7;position:relative;z-index:1;font-family:var(--font-en)">Since
+              2026 · Fayoum</span>
+          </div>
+          <div class="about-content reveal reveal-delay-2">
+            <p style="color:var(--gray-600);line-height:1.9;margin-bottom:20px">
+              <span class="ar-text"> لمسه شفاء هي شركة متخصصة في تقديم خدمات التمريض المنزلي داخل محافظة الفيوم. أسسها
+                فريق من الممرضين المحترفين الذين يؤمنون بأن الرعاية الصحية يجب أن تصل إلى المريض في أماكنه دون عناء
+                السفر أو الانتظار.</span>
+              <span class="en-text">Lamsat Shefaa is a company specializing in home nursing services within the Fayoum
+                Governorate. Founded by a team of professional nurses who believe that healthcare should reach patients
+                where they are, without the hassle of travel or waiting.</span>
+            </p>
+            <p style="color:var(--gray-600);line-height:1.9;margin-bottom:28px">
+              <span class="ar-text">رسالتنا هي تقديم رعاية صحية آمنة ومهنية ومريحة في بيئة المريض الخاصة. نحرص على بناء
+                علاقة ثقة حقيقية مع كل مريض وأسرته، مع الالتزام التام بأعلى معايير الجودة الطبية.</span>
+              <span class="en-text">Our mission is to provide safe, professional, and comfortable healthcare in the
+                patient's own environment. We build a genuine trust relationship with every patient and their family,
+                fully committed to the highest standards of medical quality.</span>
+            </p>
+            <div class="about-values">
+              <div class="about-value">✅ <span class="ar-text">الثقة والأمان</span><span class="en-text">Trust &
+                  Safety</span></div>
+              <div class="about-value">💙 <span class="ar-text">الرحمة والاهتمام</span><span class="en-text">Compassion
+                  & Care</span></div>
+              <div class="about-value">🏅 <span class="ar-text">الاحترافية العالية</span><span class="en-text">High
+                  Professionalism</span></div>
+              <div class="about-value">🕐 <span class="ar-text">متاحون دائماً</span><span class="en-text">Always
+                  Available</span></div>
+              <div class="about-value">🔬 <span class="ar-text">أدوات معقمة</span><span class="en-text">Sterile
+                  Equipment</span></div>
+              <div class="about-value">📍 <span class="ar-text">تغطية الفيوم كاملاً</span><span class="en-text">Full
+                  Fayoum Coverage</span></div>
+            </div>
+            <div style="margin-top:28px">
+              <a class="btn btn-primary" onclick="showPage('book')" style="cursor:pointer">
+                <span>📅</span><span class="ar-text">احجز خدمة الآن</span><span class="en-text">Book a Service
+                  Now</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ======== SERVICES PAGE ======== -->
+  <div class="page" id="page-services">
+    <div style="height:72px"></div>
+    <section class="section-pad">
+      <div class="container">
+        <div class="reveal" style="text-align:center;max-width:700px;margin:0 auto 48px">
+          <span class="tag"><span class="ar-text">خدماتنا الطبية</span><span class="en-text">Medical
+              Services</span></span>
+          <h2 class="section-title"><span class="ar-text">كل الخدمات التي تحتاجها</span><span class="en-text">All the
+              Services You Need</span></h2>
+          <div class="section-divider" style="margin:16px auto 24px"></div>
+          <p class="section-subtitle" style="margin:0 auto"><span class="ar-text">نقدم خدمات طبية منزلية شاملة بأيدي
+              ممرضين محترفين ومعتمدين</span><span class="en-text">Comprehensive home medical services delivered by
+              certified professional nurses</span></p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal reveal-delay-1">
+            <div class="service-icon-wrap">💉</div>
+            <div class="service-name"><span class="ar-text">جميع أنواع الحقن</span><span class="en-text">All Types of
+                Injections</span></div>
+            <div class="service-desc"><span class="ar-text">حقن عضلي (IM)، وريدي (IV)، وتحت الجلد (SC) — بأيدي ممرضين
+                محترفين وبأدوات معقمة تماماً.</span><span class="en-text">Intramuscular (IM), intravenous (IV), and
+                subcutaneous (SC) injections by professional nurses using fully sterile equipment.</span></div>
+          </div>
+          <div class="service-card reveal reveal-delay-2">
+            <div class="service-icon-wrap">🩺</div>
+            <div class="service-name"><span class="ar-text">إعطاء المحاليل الوريدية</span><span class="en-text">IV Fluid
+                Administration</span></div>
+            <div class="service-desc"><span class="ar-text">إدارة المحاليل الوريدية في منزلك بكفاءة عالية وسلامة تامة
+                ومتابعة مستمرة.</span><span class="en-text">High-efficiency IV fluid management at your home with full
+                safety and continuous monitoring.</span></div>
+          </div>
+          <div class="service-card reveal reveal-delay-3">
+            <div class="service-icon-wrap">📊</div>
+            <div class="service-name"><span class="ar-text">متابعة ضغط وسكر الدم</span><span class="en-text">BP &
+                Diabetes Monitoring</span></div>
+            <div class="service-desc"><span class="ar-text">قياس وتسجيل ضغط الدم، ومتابعة مستوى السكر بانتظام، مع تقديم
+                تقرير صحي للمريض.</span><span class="en-text">Regular measurement and recording of blood pressure and
+                blood sugar levels with a health report provided to the patient.</span></div>
+          </div>
+          <div class="service-card reveal reveal-delay-1">
+            <div class="service-icon-wrap">🩹</div>
+            <div class="service-name"><span class="ar-text">تغيير الضمادات ورعاية الجروح</span><span
+                class="en-text">Wound Care & Dressing</span></div>
+            <div class="service-desc"><span class="ar-text">تنظيف الجروح وتغيير الضمادات بأساليب معقمة طبياً لضمان
+                التعافي السريع ومنع الالتهابات.</span><span class="en-text">Wound cleaning and dressing changes using
+                medically sterile methods to ensure fast recovery and prevent infections.</span></div>
+          </div>
+          <div class="service-card reveal reveal-delay-2">
+            <div class="service-icon-wrap">🦶</div>
+            <div class="service-name"><span class="ar-text">علاج قدم السكري</span><span class="en-text">Diabetic Foot
+                Care Treatment</span></div>
+            <div class="service-desc"><span class="ar-text">رعاية متخصصة لتقرحات وجروح قدم السكري مع خطة علاجية متكاملة
+                ومتابعة دورية.</span><span class="en-text">Specialized care for diabetic foot ulcers and wounds with a
+                comprehensive treatment plan and regular follow-up.</span></div>
+          </div>
+          <div class="service-card reveal reveal-delay-3">
+            <div class="service-icon-wrap">👴</div>
+            <div class="service-name"><span class="ar-text">رعاية المسنين المنزلية</span><span class="en-text">Elderly
+                Home Care</span></div>
+            <div class="service-desc"><span class="ar-text">خدمة رعاية شاملة ومتواصلة لكبار السن — النظافة الشخصية،
+                التغذية، المتابعة الصحية، والمرافقة.</span><span class="en-text">Comprehensive continuous care for the
+                elderly — personal hygiene, nutrition, health monitoring, and companionship.</span></div>
+          </div>
+          <div class="service-card reveal reveal-delay-1">
+            <div class="service-icon-wrap">🔧</div>
+            <div class="service-name"><span class="ar-text">تركيب قسطرة بولية</span><span class="en-text">Urinary
+                Catheter Insertion</span></div>
+            <div class="service-desc"><span class="ar-text">تركيب وصيانة القسطرة البولية بمعايير طبية احترافية عالية
+                وبالكامل في منزل المريض.</span><span class="en-text">Urinary catheter insertion and maintenance with
+                high professional medical standards, fully at the patient's home.</span></div>
+          </div>
+          <div class="service-card reveal reveal-delay-2">
+            <div class="service-icon-wrap">🍽️</div>
+            <div class="service-name"><span class="ar-text">تركيب أنبوب رايل</span><span class="en-text">Nasogastric
+                (Ryle) Tube</span></div>
+            <div class="service-desc"><span class="ar-text">تركيب أنبوب التغذية الأنفي المعدي للمرضى الذين يحتاجون دعم
+                تغذوي، بكل أمان ودقة.</span><span class="en-text">Nasogastric feeding tube insertion for patients
+                requiring nutritional support, with full safety and precision.</span></div>
+          </div>
+          <div class="service-card reveal reveal-delay-3">
+            <div class="service-icon-wrap">🩸</div>
+            <div class="service-name"><span class="ar-text">تسليك حديد عن طريق الوريد</span><span class="en-text">Iron
+                IV Infusion</span></div>
+            <div class="service-desc"><span class="ar-text">إعطاء الحديد عبر الوريد لعلاج فقر الدم الناجم عن نقص الحديد
+                في بيئة آمنة ومريحة بمنزلك.</span><span class="en-text">IV iron infusion for treating iron-deficiency
+                anemia in a safe and comfortable home environment.</span></div>
+          </div>
+          <div class="service-card reveal reveal-delay-1">
+            <div class="service-icon-wrap">🧠</div>
+            <div class="service-name"><span class="ar-text">علاج طبيعي لمرضى الجلطة</span><span
+                class="en-text">Physiotherapy for Stroke Patients</span></div>
+            <div class="service-desc"><span class="ar-text">جلسات علاج طبيعي متخصصة لمرضى الجلطة الدماغية، تساعد على
+                استعادة الحركة والوظائف الحيوية.</span><span class="en-text">Specialized physiotherapy sessions for
+                stroke patients to help restore movement and vital functions.</span></div>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:48px">
+          <a class="btn btn-primary" onclick="showPage('book')" style="cursor:pointer">
+            <span>📅</span><span class="ar-text">احجز خدمة الآن</span><span class="en-text">Book a Service Now</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ======== TEAM PAGE ======== -->
+  <div class="page" id="page-team">
+    <div style="height:72px"></div>
+    <section class="section-pad" id="team">
+      <div class="container">
+        <div class="reveal" style="text-align:center;max-width:700px;margin:0 auto 48px">
+          <span class="tag"><span class="ar-text">فريق التمريض</span><span class="en-text">Nursing Team</span></span>
+          <h2 class="section-title"><span class="ar-text">فريقنا المحترف</span><span class="en-text">Our Professional
+              Team</span></h2>
+          <div class="section-divider" style="margin:16px auto 24px"></div>
+          <p class="section-subtitle" style="margin:0 auto"><span class="ar-text">ممرضون مؤهلون وذوو خبرة عالية، متاحون
+              على مدار الساعة لخدمتك</span><span class="en-text">Qualified and highly experienced nurses, available
+              around the clock to serve you</span></p>
+        </div>
+        <div class="team-grid">
+          <div class="team-card reveal reveal-delay-1">
+            <div class="team-avatar">👨‍⚕️<div class="team-badge-dot"></div>
+            </div>
+            <div class="team-name"><span class="ar-text">دكتور.احمد مرزوق</span><span class="en-text">Doctor Ahmed
+                Marzouk</span></div>
+            <div class="team-role"><span class="ar-text"> دكتور</span><span class="en-text">Doctor</span></div>
+            <div class="team-availability">
+              <div class="availability-dot"></div>
+              <span class="ar-text">متاح 24 ساعه</span><span class="en-text">Available 24 hour</span>
+            </div>
+          </div>
+          <div class="team-card reveal reveal-delay-2">
+            <div class="team-avatar">👨‍⚕️<div class="team-badge-dot"></div>
+            </div>
+            <div class="team-name"><span class="ar-text">مستر.احمد رمضان</span><span class="en-text">Nurse Ahmed
+                Ramadan</span></div>
+            <div class="team-role"><span class="ar-text">اخصائي تمريض</span><span class="en-text">Nursing
+                Specialist</span></div>
+            <div class="team-availability">
+              <div class="availability-dot"></div>
+              <span class="ar-text">متاح 24 ساعه</span><span class="en-text">Available 24 hour</span>
+            </div>
+          </div>
+          <div class="team-card reveal reveal-delay-3">
+            <div class="team-avatar">👨‍⚕️<div class="team-badge-dot"></div>
+            </div>
+            <div class="team-name"><span class="ar-text">مستر.خالد حموده </span><span class="en-text">Nurse Khaled
+                Hamouda</span></div>
+            <div class="team-role"><span class="ar-text">اخصائي تمريض</span><span class="en-text">Nursing
+                Specialist</span></div>
+            <div class="team-availability">
+              <div class="availability-dot"></div>
+              <span class="ar-text">متاح 24 ساعه</span><span class="en-text">Available 24 hour</span>
+            </div>
+          </div>
+          <div class="team-card reveal reveal-delay-1">
+            <div class="team-avatar">👨‍⚕️<div class="team-badge-dot"></div>
+            </div>
+            <div class="team-name"><span class="ar-text">مستر.محمد عادل</span><span class="en-text">Nurse Muhammad
+                Adel</span></div>
+            <div class="team-role"><span class="ar-text">اخصائي تمريض</span><span class="en-text">Nursing
+                Specialist</span></div>
+            <div class="team-availability">
+              <div class="availability-dot"></div>
+              <span class="ar-text">متاح 24 ساعه</span><span class="en-text">Available 24 hour</span>
+            </div>
+          </div>
+          <div class="team-card reveal reveal-delay-2">
+            <div class="team-avatar">👨‍⚕️<div class="team-badge-dot"></div>
+            </div>
+            <div class="team-name"><span class="ar-text">مستر.عمار علاء</span><span class="en-text">Nurse Sara
+                Khaled</span></div>
+            <div class="team-role"><span class="ar-text">اخصائي تمريض</span><span class="en-text">Nursing
+                Specialist</span></div>
+            <div class="team-availability">
+              <div class="availability-dot"></div>
+              <span class="ar-text">متاح 24 ساعه</span><span class="en-text">Available 24 hour</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ======== REVIEWS PAGE ======== -->
+  <div class="page" id="page-reviews">
+    <div style="height:72px"></div>
+    <section class="section-pad" id="reviews">
+      <div class="container">
+        <div class="reveal" style="text-align:center;max-width:700px;margin:0 auto 48px">
+          <span class="tag"><span class="ar-text">آراء عملائنا</span><span class="en-text">Customer
+              Reviews</span></span>
+          <h2 class="section-title"><span class="ar-text">ماذا قال عنا مرضانا</span><span class="en-text">What Our
+              Patients Say</span></h2>
+          <div class="section-divider" style="margin:16px auto 24px"></div>
+          <p class="section-subtitle" style="margin:0 auto"><span class="ar-text">ثقة مئات العائلات في الفيوم تُلهمنا
+              لنكون أفضل كل يوم</span><span class="en-text">The trust of hundreds of Fayoum families inspires us to be
+              better every day</span></p>
+        </div>
+        <!-- Overall rating -->
+        <div class="reveal"
+          style="background:white;border-radius:var(--radius-lg);padding:32px;text-align:center;max-width:400px;margin:0 auto 40px;box-shadow:var(--shadow-md)">
+          <div style="font-size:3.5rem;font-weight:900;color:var(--blue-deep)">5.0</div>
+          <div class="stars" style="justify-content:center;font-size:1.5rem">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+              class="star">★</span><span class="star">★</span>
+          </div>
+          <div style="color:var(--gray-400);font-size:0.88rem;margin-top:8px">
+            <span class="ar-text">بناءً على آراء ٥٠٠+ مريض</span><span class="en-text">Based on 500+ patient
+              reviews</span>
+          </div>
+        </div>
+        <div class="reviews-grid">
+          <div class="review-card reveal reveal-delay-1">
+            <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+                class="star">★</span><span class="star">★</span></div>
+            <div class="review-text"><span class="ar-text"> الحمد لله، الممرض اللي جه كان محترم جداً وعارف شغله . أمي
+                محتاجة حقن يومية والحمد لله بقينا بنطلبهم من البيت وبسرعة بيجوا."</span><span
+                class="en-text">"Alhamdulillah, the nurse who came was very professional and knew her work well. My
+                mother needs daily injections, and now we order from home and they come quickly."</span></div>
+            <div class="reviewer">
+              <div class="reviewer-avatar">أ.م</div>
+              <div>
+                <div class="reviewer-name"><span class="ar-text">أم محمد</span><span class="en-text">Om Mohamed</span>
+                </div>
+                <div class="reviewer-loc">📍 <span class="ar-text">الفيوم - وسط البلد</span><span class="en-text">Fayoum
+                    - City Center</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="review-card reveal reveal-delay-2">
+            <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+                class="star">★</span><span class="star">★</span></div>
+            <div class="review-text"><span class="ar-text">"والله خدمة ممتازة. والدي عنده جلطة ومحتاج علاج طبيعي،
+                والمعالج بيجي البيت بانتظام وبنلاقي فرق واضح جداً. شكراً لمسه شفاء ."</span><span
+                class="en-text">"Excellent service. My father has had a stroke and needs physiotherapy, the therapist
+                comes home regularly and we see a very clear improvement. Thank you Lamsat Shefaa ."</span></div>
+            <div class="reviewer">
+              <div class="reviewer-avatar">أ.ك</div>
+              <div>
+                <div class="reviewer-name"><span class="ar-text">أحمد كمال</span><span class="en-text">Ahmed
+                    Kamal</span></div>
+                <div class="reviewer-loc">📍 <span class="ar-text">سنورس</span><span class="en-text">Sinnuris</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-card reveal reveal-delay-3">
+            <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+                class="star">★</span><span class="star">★</span></div>
+            <div class="review-text"><span class="ar-text">"أسرع ما توقعت! طلبت الخدمة الساعة ١١ بالليل ووصل الممرض خلال
+                ساعة. الأدوات نظيفة ومعقمة والخدمة احترافية ١٠٠٪."</span><span class="en-text">"Faster than I expected!
+                I requested the service at 11pm and the nurse arrived within an hour. Equipment was clean and sterile,
+                100% professional service."</span></div>
+            <div class="reviewer">
+              <div class="reviewer-avatar">م.ر</div>
+              <div>
+                <div class="reviewer-name"><span class="ar-text">ماجدة رضا</span><span class="en-text">Magda Reda</span>
+                </div>
+                <div class="reviewer-loc">📍 <span class="ar-text">طامية</span><span class="en-text">Tamia</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="review-card reveal reveal-delay-1">
+            <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+                class="star">★</span><span class="star">★</span></div>
+            <div class="review-text"><span class="ar-text">"عملت لجدي ضمادات الجرح أسبوعين متتاليين وكان في تحسن كبير
+                جداً. الممرضة شرحت لنا إزاي نهتم بالجرح بين الزيارات. خدمة عظيمة."</span><span class="en-text">"Did
+                wound dressings for my grandfather for two consecutive weeks and there was huge improvement. The nurse
+                explained how to care for the wound between visits. Great service."</span></div>
+            <div class="reviewer">
+              <div class="reviewer-avatar">ن.ع</div>
+              <div>
+                <div class="reviewer-name"><span class="ar-text">نورهان عبدالله</span><span class="en-text">Nourhan
+                    Abdullah</span></div>
+                <div class="reviewer-loc">📍 <span class="ar-text">إطسا</span><span class="en-text">Itsa</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="review-card reveal reveal-delay-2">
+            <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+                class="star">★</span><span class="star">★</span></div>
+            <div class="review-text"><span class="ar-text">"بنستخدم لمسه شفاء لرعاية والدتي المسنة بشكل منتظم. الفريق
+                بيتعامل معها بكل احترام ومحبة. بنحس إن فيه ناس بتاخد مسؤولية غير احنا."</span><span class="en-text">"We
+                use Lamsat Shefaa to care for our elderly mother regularly. The team treats her with complete respect
+                and love. We feel there's someone else taking responsibility alongside us."</span></div>
+            <div class="reviewer">
+              <div class="reviewer-avatar">خ.س</div>
+              <div>
+                <div class="reviewer-name"><span class="ar-text">خالد سامي</span><span class="en-text">Khaled
+                    Samy</span></div>
+                <div class="reviewer-loc">📍 <span class="ar-text">يوسف الصديق</span><span class="en-text">Yusuf
+                    El-Siddiq</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="review-card reveal reveal-delay-3">
+            <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+                class="star">★</span><span class="star">★</span></div>
+            <div class="review-text"><span class="ar-text">"تسليك الحديد وريدي كان بيخوفني جداً، بس الممرض ريحني وشرح لي
+                كل حاجة خطوة بخطوة. خلصت وأنا مش حاسة بأي ألم. ربنا يجزيكم خير."</span><span class="en-text">"IV iron
+                infusion used to scare me a lot, but the nurse reassured me and explained everything step by step. I
+                finished without feeling any pain. God bless you."</span></div>
+            <div class="reviewer">
+              <div class="reviewer-avatar">ه.م</div>
+              <div>
+                <div class="reviewer-name"><span class="ar-text">هدى مصطفى</span><span class="en-text">Hoda
+                    Mostafa</span></div>
+                <div class="reviewer-loc">📍 <span class="ar-text">الفيوم - الجديدة</span><span class="en-text">New
+                    Fayoum</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ======== CONTACT PAGE ======== -->
+  <div class="page" id="page-contact">
+    <div style="height:72px"></div>
+    <section class="section-pad" id="contact">
+      <div class="container">
+        <div class="reveal">
+          <span class="tag"><span class="ar-text">تواصل معنا</span><span class="en-text">Contact Us</span></span>
+          <h2 class="section-title"><span class="ar-text">نحن هنا لمساعدتك</span><span class="en-text">We're Here to
+              Help</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle"><span class="ar-text">تواصل معنا عبر أي وسيلة وسنرد عليك في أسرع وقت</span><span
+              class="en-text">Reach us through any channel and we'll respond as quickly as possible</span></p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <div class="contact-label"><span class="ar-text">الهاتف</span><span class="en-text">Phone</span></div>
+                <a href="tel:+201117686369" class="contact-value">01117686369</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">💬</div>
+              <div>
+                <div class="contact-label">WhatsApp</div>
+                <a href="https://wa.me/201092861789" target="_blank" class="contact-value">01092861789</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div>
+                <div class="contact-label"><span class="ar-text">البريد الإلكتروني</span><span
+                    class="en-text">Email</span></div>
+                <a href="mailto:glalhamoda789@gmail.com" class="contact-value">glalhamoda789@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <div class="contact-label"><span class="ar-text">الموقع</span><span class="en-text">Location</span>
+                </div>
+                <div class="contact-value"><span class="ar-text">محافظة الفيوم، مصر</span><span class="en-text">Fayoum
+                    Governorate, Egypt</span></div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">🕐</div>
+              <div>
+                <div class="contact-label"><span class="ar-text">ساعات العمل</span><span class="en-text">Working
+                    Hours</span></div>
+                <div class="contact-value" style="font-size:0.9rem"><span class="ar-text">٢٤ ساعة، ٧ أيام في
+                    الأسبوع</span><span class="en-text">24 Hours, 7 Days a Week</span></div>
+              </div>
+            </div>
+            <a href="https://wa.me/201092861789" target="_blank" class="btn btn-whatsapp"
+              style="margin-top:8px;width:fit-content">
+              <span>💬</span><span class="ar-text">تحدث معنا على واتساب</span><span class="en-text">Chat with Us on
+                WhatsApp</span>
+            </a>
+          </div>
+          <div class="reveal reveal-delay-2">
+            <div class="map-embed">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3434.7!2d30.8418!3d29.3084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14556e29f4571b67%3A0x3a17e9a92862a4de!2sFaiyum%2C%20Faiyum%20Governorate%2C%20Egypt!5e0!3m2!1sen!2seg!4v1680000000000!5m2!1sen!2seg"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Fayoum Map">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ======== BOOK PAGE ======== -->
+  <div class="page" id="page-book">
+    <div style="height:72px"></div>
+    <section class="section-pad" id="book">
+      <div class="container">
+        <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto 12px">
+          <span class="tag"><span class="ar-text">حجز خدمة</span><span class="en-text">Book a Service</span></span>
+          <h2 class="section-title"><span class="ar-text">احجز خدمتك الآن</span><span class="en-text">Book Your Service
+              Now</span></h2>
+          <div class="section-divider" style="margin:16px auto 24px"></div>
+          <p class="section-subtitle" style="margin:0 auto"><span class="ar-text">أكمل النموذج وسنتواصل معك فوراً لتأكيد
+              الحجز</span><span class="en-text">Fill in the form and we'll contact you immediately to confirm your
+              booking</span></p>
+        </div>
+
+        <div class="booking-wrap reveal">
+          <div id="booking-form-section">
+            <form class="form-grid" onsubmit="submitBooking(event)">
+              <div class="form-group">
+                <label class="form-label"><span class="ar-text">الاسم الكامل *</span><span class="en-text">Full Name
+                    *</span></label>
+                <input type="text" class="form-input" id="f-name" required placeholder="">
+              </div>
+              <div class="form-group">
+                <label class="form-label"><span class="ar-text">رقم الهاتف *</span><span class="en-text">Phone Number
+                    *</span></label>
+                <input type="tel" class="form-input" id="f-phone" required placeholder="01117686369">
+              </div>
+              <div class="form-group full">
+                <label class="form-label"><span class="ar-text">العنوان التفصيلي *</span><span class="en-text">Detailed
+                    Address *</span></label>
+                <input type="text" class="form-input" id="f-address" required placeholder="">
+              </div>
+              <div class="form-group full">
+                <label class="form-label"><span class="ar-text">الخدمة المطلوبة *</span><span class="en-text">Service
+                    Required *</span></label>
+                <select class="form-select" id="f-service" required>
+                  <option value="" disabled selected>
+                  </option>
+                  <option value="حقن">
+                  </option>
+                  <option value="محاليل وريدية">
+                  </option>
+                  <option value="قياس ضغط وسكر">
+                  </option>
+                  <option value="ضمادات وجروح">
+                  </option>
+                  <option value="علاج قدم السكري">
+                  </option>
+                  <option value="رعاية مسنين">
+                  </option>
+                  <option value="قسطرة بولية">
+                  </option>
+                  <option value="أنبوب رايل">
+                  </option>
+                  <option value="تسليك حديد وريدي">
+                  </option>
+                  <option value="علاج طبيعي جلطة">
+                  </option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label class="form-label"><span class="ar-text">الوقت المفضل للزيارة *</span><span
+                    class="en-text">Preferred Visit Time *</span></label>
+                <input type="datetime-local" class="form-input" id="f-time" required>
+              </div>
+              <div class="form-group full">
+                <label class="form-label"><span class="ar-text">ملاحظات إضافية</span><span class="en-text">Additional
+                    Notes</span></label>
+                <textarea class="form-textarea" id="f-notes" placeholder=""></textarea>
+              </div>
+              <div class="form-group full">
+                <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:16px">
+                  <span>📅</span>
+                  <span class="ar-text">تأكيد الحجز والتواصل عبر واتساب</span>
+                  <span class="en-text">Confirm & Continue via WhatsApp</span>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="booking-success" id="booking-success">
+            <div class="success-icon">✅</div>
+            <div class="success-title">
+              <span class="ar-text">تم استلام طلبك!</span>
+              <span class="en-text">Request Received!</span>
+            </div>
+            <p class="success-sub">
+              <span class="ar-text">شكراً لك. سيتم تحويلك إلى واتساب الآن لتأكيد حجزك مع فريقنا.</span>
+              <span class="en-text">Thank you. You'll be redirected to WhatsApp now to confirm your booking with our
+                team.</span>
+            </p>
+            <a id="wa-confirm-link" href="#" target="_blank" class="btn btn-whatsapp" style="margin:0 auto">
+              <span>💬</span>
+              <span class="ar-text">فتح واتساب للتأكيد</span>
+              <span class="en-text">Open WhatsApp to Confirm</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+  <footer id="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo" style="cursor:default">
+            <div class="logo-icon">🏥</div>
+            <div class="logo-text">
+              <span class="logo-ar" style="color:white"> لمسه شفاء</span>
+              <span class="logo-en">Lamsat Shefaa</span>
+            </div>
+          </div>
+          <p><span class="ar-text">خدمات التمريض المنزلي المتكاملة في محافظة الفيوم — نصل إليك أينما كنت بأعلى معايير
+              الجودة والأمان.</span><span class="en-text">Comprehensive home nursing services in Fayoum Governorate — we
+              reach you wherever you are with the highest quality and safety standards.</span></p>
+          <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
+            <a href="https://wa.me/201092861789" target="_blank" class="btn btn-whatsapp"
+              style="padding:8px 16px;font-size:0.85rem">
+              💬 WhatsApp
+            </a>
+            <a href="tel:+201117686369" class="btn btn-outline"
+              style="padding:8px 16px;font-size:0.85rem;color:rgba(255,255,255,0.7);border-color:rgba(255,255,255,0.2)">
+              📞 01117686369
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4><span class="ar-text">الصفحات</span><span class="en-text">Pages</span></h4>
+          <ul>
+            <li><a onclick="showPage('home')"><span class="ar-text">الرئيسية</span><span class="en-text">Home</span></a>
+            </li>
+            <li><a onclick="showPage('about')"><span class="ar-text">من نحن</span><span class="en-text">About
+                  Us</span></a></li>
+            <li><a onclick="showPage('services')"><span class="ar-text">خدماتنا</span><span
+                  class="en-text">Services</span></a></li>
+            <li><a onclick="showPage('team')"><span class="ar-text">الفريق</span><span class="en-text">Team</span></a>
+            </li>
+            <li><a onclick="showPage('reviews')"><span class="ar-text">آراء العملاء</span><span
+                  class="en-text">Reviews</span></a></li>
+            <li><a onclick="showPage('contact')"><span class="ar-text">تواصل معنا</span><span
+                  class="en-text">Contact</span></a></li>
+            <li><a onclick="showPage('book')"><span class="ar-text">احجز الآن</span><span class="en-text">Book
+                  Now</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4><span class="ar-text">خدماتنا</span><span class="en-text">Services</span></h4>
+          <ul>
+            <li><a><span class="ar-text">حقن وريدي وعضلي</span><span class="en-text">IV & IM Injections</span></a></li>
+            <li><a><span class="ar-text">محاليل وريدية</span><span class="en-text">IV Fluids</span></a></li>
+            <li><a><span class="ar-text">رعاية الجروح</span><span class="en-text">Wound Care</span></a></li>
+            <li><a><span class="ar-text">رعاية المسنين</span><span class="en-text">Elderly Care</span></a></li>
+            <li><a><span class="ar-text">علاج طبيعي</span><span class="en-text">Physiotherapy</span></a></li>
+            <li><a><span class="ar-text">قسطرة وأنبوب رايل</span><span class="en-text">Catheter & Ryle Tube</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 <span class="ar-text">لمسه شفاء<span class="en-text">Lamsat shefaa</span> — <span
+              class="ar-text">جميع الحقوق محفوظة</span><span class="en-text">All Rights Reserved</span></span>
+          <span>📍 <span class="ar-text">الفيوم، مصر</span><span class="en-text">Fayoum, Egypt</span></span>
+          <p style="margin-top: 10px;">Designed by <a href="mailto:madogal95@gamil.com">Ahmed Galal</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/201092861789" target="_blank" id="whatsapp-float" title="WhatsApp">
+    <div class="wa-btn">
+      <div class="wa-pulse"></div>
+      💬
+    </div>
+  </a>
+
+  <!-- SCROLL TOP -->
+  <button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
+
+  <script>
+    // ===== LANGUAGE TOGGLE =====
+    let isRTL = true;
+
+    function toggleLang() {
+      isRTL = !isRTL;
+      const html = document.documentElement;
+      if (isRTL) {
+        html.setAttribute('dir', 'rtl');
+        html.setAttribute('lang', 'ar');
+        document.body.classList.remove('en-mode');
+      } else {
+        html.setAttribute('dir', 'ltr');
+        html.setAttribute('lang', 'en');
+        document.body.classList.add('en-mode');
+      }
+      updateSelectOptions();
+    }
+
+    function updateSelectOptions() {
+      const sel = document.getElementById('f-service');
+      if (!sel) return;
+      const options = isRTL ? [
+        ['', 'اختر الخدمة المطلوبة...'],
+        ['حقن', 'جميع أنواع الحقن (IM / IV / SC)'],
+        ['محاليل وريدية', 'إعطاء المحاليل الوريدية'],
+        ['قياس ضغط وسكر', 'متابعة ضغط الدم والسكر'],
+        ['ضمادات وجروح', 'تغيير الضمادات ورعاية الجروح'],
+        ['علاج قدم السكري', 'علاج قدم السكري'],
+        ['رعاية مسنين', 'رعاية المسنين المنزلية'],
+        ['قسطرة بولية', 'تركيب قسطرة بولية'],
+        ['أنبوب رايل', 'تركيب أنبوب رايل (تغذية)'],
+        ['تسليك حديد وريدي', 'تسليك حديد عن طريق الوريد'],
+        ['علاج طبيعي جلطة', 'علاج طبيعي لمرضى الجلطة'],
+      ] : [
+        ['', 'Select the required service...'],
+        ['حقن', 'All Types of Injections (IM / IV / SC)'],
+        ['محاليل وريدية', 'IV Fluid Administration'],
+        ['قياس ضغط وسكر', 'BP & Blood Sugar Monitoring'],
+        ['ضمادات وجروح', 'Wound Care & Dressing'],
+        ['علاج قدم السكري', 'Diabetic Foot Care Treatment'],
+        ['رعاية مسنين', 'Elderly Home Care'],
+        ['قسطرة بولية', 'Urinary Catheter Insertion'],
+        ['أنبوب رايل', 'Nasogastric (Ryle) Tube'],
+        ['تسليك حديد وريدي', 'Iron IV Infusion'],
+        ['علاج طبيعي جلطة', 'Physiotherapy for Stroke Patients'],
+      ];
+      sel.innerHTML = options.map((o, i) =>
+        `<option value="${o[0]}"${i === 0 ? 'disabled selected' : ''}>${o[1]}</option>`
+      ).join('');
+    }
+
+    // Init select options
+    updateSelectOptions();
+
+    // ===== PAGE NAVIGATION =====
+    const pages = ['home', 'about', 'services', 'team', 'reviews', 'contact', 'book'];
+
+    function showPage(id) {
+      pages.forEach(p => {
+        document.getElementById('page-' + p).classList.remove('active');
+        const nav = document.getElementById('nav-' + p);
+        if (nav) nav.classList.remove('active-link');
+      });
+      document.getElementById('page-' + id).classList.add('active');
+      const nav = document.getElementById('nav-' + id);
+      if (nav) nav.classList.add('active-link');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setTimeout(initReveal, 100);
+    }
+
+    // ===== MOBILE NAV =====
+    function toggleMobile() {
+      document.getElementById('mobile-nav').classList.toggle('open');
+    }
+    function closeMobile() {
+      document.getElementById('mobile-nav').classList.remove('open');
+    }
+
+    // ===== NAVBAR SCROLL =====
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 20) navbar.classList.add('scrolled');
+      else navbar.classList.remove('scrolled');
+
+      const scrollTop = document.getElementById('scroll-top');
+      if (window.scrollY > 400) scrollTop.classList.add('visible');
+      else scrollTop.classList.remove('visible');
+    });
+
+    // ===== SCROLL REVEAL =====
+    function initReveal() {
+      const elements = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            observer.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      elements.forEach(el => {
+        if (!el.classList.contains('visible')) observer.observe(el);
+      });
+    }
+    initReveal();
+    window.addEventListener('scroll', initReveal);
+
+    // ===== BOOKING FORM =====
+    function submitBooking(e) {
+      e.preventDefault();
+      const name = document.getElementById('f-name').value;
+      const phone = document.getElementById('f-phone').value;
+      const address = document.getElementById('f-address').value;
+      const service = document.getElementById('f-service').value;
+      const time = document.getElementById('f-time').value;
+      const notes = document.getElementById('f-notes').value;
+
+      // Show success
+      document.getElementById('booking-form-section').style.display = 'none';
+      const successEl = document.getElementById('booking-success');
+      successEl.classList.add('show');
+
+      // Build WhatsApp message
+      const msg = isRTL
+        ? `مرحباً، أود حجز خدمة تمريض منزلي:\n\nالاسم: ${name}\nالهاتف: ${phone}\nالعنوان: ${address}\nالخدمة: ${service}\nالوقت المفضل: ${time}\nملاحظات: ${notes || 'لا يوجد'}`
+        : `Hello, I'd like to book a home nursing service:\n\nName: ${name}\nPhone: ${phone}\nAddress: ${address}\nService: ${service}\nPreferred Time: ${time}\nNotes: ${notes || 'None'}`;
+
+      const waLink = `https://wa.me/201092861789?text=${encodeURIComponent(msg)}`;
+      document.getElementById('wa-confirm-link').href = waLink;
+
+      // Auto redirect after 2s
+      setTimeout(() => { window.open(waLink, '_blank'); }, 2000);
+    }
+  </script>
+</body>
+
+</html>
